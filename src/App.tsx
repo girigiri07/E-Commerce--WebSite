@@ -3,10 +3,10 @@ import './App.css';
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import { HeaderPage } from './Componets/HeaderPage';
-import { ChangePasswordpage } from './pages/private/ChangePassword/ChangePasswordpage';
-import { ForgotPasswordPage } from './pages/public/ForgotPassword/ForgotPasswordPage';
-import { LoginPage } from './pages/public/Login/LoginPage';
-import { SignUpFormPage } from './pages/public/SignUp/SignUpFormPage';
+// import { ChangePasswordpage } from './pages/private/ChangePassword/ChangePasswordpage';
+// import { ForgotPasswordPage } from './pages/public/ForgotPassword/ForgotPasswordPage';
+// import { LoginPage } from './pages/public/Login/LoginPage';
+// import { SignUpFormPage } from './pages/public/SignUp/SignUpFormPage';
 import { BrowserRouter, Routes ,Route  } from 'react-router-dom';
 import { PublicRoutesList  } from './Routes/PublicRoutes';
 import { PrivateRoutesList } from './Routes/PrivateRoutes';
@@ -41,7 +41,7 @@ CONTACT
     LOGIN,
     SIGNUP,
     FORGOTPASSWORD,
-    TABLETASK
+ 
   } = PublicRoutesList
   return (
 <>
@@ -60,15 +60,15 @@ CONTACT
 <Route path={ABOUTS} element={<AboutPage />} />
 <Route path={CONTACT} element={<ContactPage />} />
 
-  <Route path={LOGIN} element={<LoginPage />} />
-  <Route path={SIGNUP} element={<SignUpFormPage />} />
+{/*   <Route path={LOGIN} element={<LoginPage />} />
+  <Route path={SIGNUP} element={<SignUpFormPage />} /> */}
   {/* <Route path={HEADER} element={<HeaderPage />} /> */}
-  <Route path={CHANGEPASSWORD} element={<ChangePasswordpage />} />
-  <Route path={FORGOTPASSWORD} element={<ForgotPasswordPage />}/>
+{/*   <Route path={CHANGEPASSWORD} element={<ChangePasswordpage />} />
+  <Route path={FORGOTPASSWORD} element={<ForgotPasswordPage />}/> */}
   
 
   {/* another project path */}
-  <Route path={TABLETASK} element={<TableFilter />}/>
+{/*   <Route path={TABLETASK} element={<TableFilter />}/> */}
 </Routes>
 <Footer />
 </BrowserRouter>
