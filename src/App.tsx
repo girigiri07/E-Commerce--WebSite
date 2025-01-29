@@ -10,7 +10,7 @@ import { SignUpFormPage } from './pages/public/SignUp/SignUpFormPage';
 import { BrowserRouter, Routes ,Route  } from 'react-router-dom';
 import { PublicRoutesList  } from './Routes/PublicRoutes';
 import { PrivateRoutesList } from './Routes/PrivateRoutes';
-import { TableFilter } from './table/TableFilter';
+
 import { HomePage } from './home/HomePage';
 import { Footer } from './Componets/Footer';
 import { ShopPage } from './Shop/ShopPage';
